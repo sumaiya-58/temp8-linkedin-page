@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            border-color:blue;
+        }
+        img{
+            height:60px;
+            width:120px;
+            
+        }
+        .con{
+                display:flex;
+                justify-content: center;
+        }
+        .box{
+            
+            
+            
+        }
+        h4:before, 
+        h4:after {
+    content: "";
+    flex:1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+        
+        
+    </style>
+</head>
+<body>
+    <img src="data:image/png;base64,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">
+    <div class="con">
+        <div class="box">
+    
+        
+        <h1>Sign in</h1>
+        <p>Stay updated on your professional world.</p>
+        <p>
+        <input style="height:30px" type="text" required placeholder="Email or phone"><br></p>
+        <p>
+        <input style="height:30px" type="text" required placeholder="Password"></p>
+        <p>
+        <a href="https://www.linkedin.com/checkpoint/rp/request-password-reset">Forgot password?</a></p>
+        <p>
+        <input type="checkbox" id="ch"><label for="ch">Keep me logged in</label></p>
+        <button style="border-radius:20px; height:40px ;width:300px; background-color: blue;color:white";>Sign in</button>
+        <h4>or</h4>
+          
+            <p style ="font-size:10;">By clicking Continue, you agree to LinkedIn’s<a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>,<br><a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and<a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a>.</h10>
+            <p><button style="border-radius:20px; height:40px ;width: 300px; background-color:white;color:black";>Continue with Google</button></p>
+            <p><button style="border-radius:20px; height:40px ;width:300px; background-color:white;color:black";>Sign in with Apple</button></p>
+            <p>New to LinkedIn? <a href="https://www.linkedin.com/signup/cold-join"> Join now</a></p>
+      </div>
+    </div>
+</body>
+</html>
